@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Каталог - Нёрдс</title>
+    <meta name="description" content="примеры наших работ, примеры разработки сеток веб-сайтов с особенностями">
+    <meta name="keywords" content="дизайн, портфолио, Краснодар, адапативная сетка, верстка, резиновая сетка, фиксированная сетка, блоки особенностей, слайдер, галерея">
+    <meta name="author" content="vk.com/id34214149">
+    <link href="http://fonts.googleapis.com/css?family=Roboto:500&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/normalize.css" type="text/css">
+    <link rel="stylesheet" href="css/style.min.css" type="text/css">  
+    <link rel="icon" href="img/favicon.ico" type="image/ico">
+</head>
+
+<body>
+    <header class="main-header main-catalog">
+        <div class="main-header-block container clearfix">
+            <figure class="main-header-logo">
+                <a href="index.html">
+                    <img src="img/main-header-logo.png" width="139" height="56" alt="Nerds">
+                </a>
+            </figure>
+            <nav class="main-header-menu">
+                <a href="index.html">студия</a>
+                <a href="#">клиенты</a>
+                <a href="catalog.html" class="current">магазин</a>
+                <a href="#">контакты</a>
+                <a href="#" class="main-menu-cart">корзина</a>
+            </nav>
+        </div>
+        <h1 class="catalog-title container">Добро пожаловать в магазин 
+готовых макетов</h1>
+    </header>
+    <main class="container">
+        <div class="catalog clearfix">
+            <aside class="catalog-left-column">
+                <form action="/shpw" method="post">
+                    <h3 class="catalog-filter-title catalog-price-title">Стоимость:</h3>
+                    <div class="catalog-range-filter">
+                        <div class="catalog-filter-controls">
+                            <div class="catalog-filter-scale">
+                                <div class="catalog-scale-bar"></div>
+                            </div>
+                            <div class="catalog-scale-toggle catalog-min-toggle"></div>
+                            <div class="catalog-scale-toggle catalog-max-toggle"></div>
+                        </div>
+                        <div class="catalog-price-controls clearfix">
+                            <div class="catalog-controls-left">
+                                <span class="catalog-price-from">от</span>
+                                <input class="catalog-min-price" type="text" value="0">
+                            </div>
+                            <div class="catalog-controls-right">
+                                <span class="catalog-price-till">до</span>
+                                <input class="catalog-max-price" type="text" value="15 000">
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="catalog-filter-title catalog-grid-title">Сетка:</h3>
+                    <input type="radio" name="grid" id="adaptive" value="adaptive" checked>
+                    <label class="catalog-label"  for="adaptive">Адаптивная</label>
+                    <input type="radio" name="grid" id="rubber" value="rubber">
+                    <label class="catalog-label"  for="rubber">Резинования</label>
+                    <input type="radio" name="grid" id="fixed" value="fixed" disabled>
+                    <label class="catalog-label"  for="fixed">Фиксированная</label>
+                    <h3 class="catalog-filter-title catalog-features-title">Особенности:</h3>
+                    <input id="slider" name="slider" type="checkbox" value="slider" checked>
+                    <label class="catalog-label"  for="slider">Слайдер</label>
+                    <input id="advantages" name="advantages" type="checkbox" value="advantages" disabled>
+                    <label class="catalog-label"  for="advantages">Блок преимуществ</label>
+                    <input id="news" name="news" type="checkbox" value="news" checked>
+                    <label class="catalog-label"  for="news">Новости</label>
+                    <input id="gallery" name="gallery" type="checkbox" value="gallery">
+                    <label class="catalog-label"  for="gallery">Галлерея</label>
+                    <input id="cart" name="cart" type="checkbox" value="cart">
+                    <label class="catalog-label"  for="cart">Корзина</label>
+                    <button type="submit" class="btn filter-btn">Показать</button>
+                </form>
+            </aside>
+            <div class="catalog-right-column">
+                <div class="catalog-sort">
+                    <span class="catalog-sort-title clearfix">Сортировать:</span>
+                    <a href="#" class="catalog-sort-option">По цене</a>
+                    <a href="#" class="catalog-sort-option">По типу</a>
+                    <a href="#" class="catalog-sort-option">По функционалу</a>
+                    <div class="catalog-arrow-block">
+                        <a href="#" class="catalog-arrow-down catalog-arrow-active"></a>
+                        <a href="#" class="catalog-arrow-up"></a>
+                    </div>
+                </div>
+                <div class="catalog-block clearfix">
+                    <a href="#" class="catalog-item">
+                        <figure class="catalog-image">
+                            <img src="img/catalog-img-desert.jpg" width="240" height="240" alt="Aviator">
+                        </figure>
+                        <div class="catalog-item-block">
+                            <h3 class="catalog-item-title">suset</h3>
+                            <p class="catalog-item-info">Интернет-магазин с личным кабинетом</p>
+                            <span class="btn catalog-item-btn">10000 Р.</span>
+                        </div>
+                    </a>
+                    <a href="#" class="catalog-item">
+                        <figure class="catalog-image">
+                            <img src="img/catalog-img-aviator.jpg" width="240" height="240" alt="Desert">
+                        </figure>
+                        <div class="catalog-item-block">
+                            <h3 class="catalog-item-title">suset</h3>
+                            <p class="catalog-item-info">Интернет-магазин с личным кабинетом</p>
+                            <span class="btn catalog-item-btn">10000 Р.</span>
+                        </div>
+                    </a>
+                    <a href="#" class="catalog-item">
+                        <figure class="catalog-image">
+                            <img src="img/catalog-img-thai.jpg" width="240" height="240" alt="Forte">
+                        </figure>
+                        <div class="catalog-item-block">
+                            <h3 class="catalog-item-title">suset</h3>
+                            <p class="catalog-item-info">Интернет-магазин с личным кабинетом</p>
+                            <span class="btn catalog-item-btn">10000 Р.</span>
+                        </div>
+                    </a>
+                    <a href="#" class="catalog-item">
+                        <figure class="catalog-image">
+                            <img src="img/catalog-img-forte.jpg" width="240" height="240" alt="Modern organic thai">
+                        </figure>
+                        <div class="catalog-item-block">
+                            <h3 class="catalog-item-title">suset</h3>
+                            <p class="catalog-item-info">Интернет-магазин с личным кабинетом</p>
+                            <span class="btn catalog-item-btn">10000 Р.</span>
+                        </div>
+                    </a>
+                    <a href="#" class="catalog-item">
+                        <figure class="catalog-image">
+                            <img src="img/catalog-img-dovetail.jpg" width="240" height="240" alt="Avenue">
+                        </figure>
+                        <div class="catalog-item-block">
+                            <h3 class="catalog-item-title">suset</h3>
+                            <p class="catalog-item-info">Интернет-магазин с личным кабинетом</p>
+                            <span class="btn catalog-item-btn">10000 Р.</span>
+                        </div>
+                    </a>
+                    <a href="#" class="catalog-item">
+                        <figure class="catalog-image">
+                            <img src="img/catalog-img-avenue.jpg" width="240" height="240" alt="Dovetail">
+                        </figure>
+                        <div class="catalog-item-block">
+                            <h3 class="catalog-item-title">suset</h3>
+                            <p class="catalog-item-info">Интернет-магазин с личным кабинетом</p>
+                            <span class="btn catalog-item-btn">10000 Р.</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="catalog-paginator">
+                    <span class="catalog-paginator-active">1</span>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#" class="catalog-paginator-next">Следующая</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="map">
+            <div class="map-script"></div>
+            <div class="container">
+                <div class="map-block">
+                    <h3 class="map-block-title">Nerds design studio</h3>
+                    <p class="map-block-info">350000, Краснодар, ул. Головатого, 100</p>
+                    <p class="map-block-info">тел. +7 (861) 275-75-75</p>
+                    <a href="feedback.html" class="btn map-btn">Напишите нам</a>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-footer container clearfix">
+            <div class="footer-left-column">
+                <a href="#" class="footer-btn footer-btn-vk"></a>
+                <a href="#" class="footer-btn footer-btn-fb"></a>
+                <a href="#" class="footer-btn footer-btn-inst"></a>
+            </div>
+            <section class="footer-right-column">
+                <h2 class="footer-title">Давайте дружить, это выгодно!</h2>
+                <p class="footer-info">Скидка 10% для друзей из социальных сетей.</p>
+            </section>
+        </div>
+    </footer>
+    <div class="feedback">
+        <form action="/feedback" method="post">
+            <div class="feedback-user clearfix">
+                <div class="feedback-left-column">
+                    <label class="feedback-data" for="feedback-login">Ваше имя:</label>
+                    <input type="text" name="login" id="feedback-login" placeholder="Представьтесь, пожалуйста" required>
+                </div>
+                <div class="feedback-right-column">
+                    <label class="feedback-data" for="feedback-email">Ваш e-mail:</label>
+                    <input type="email" name="email" id="feedback-email" placeholder="Для отправки ответа" required>
+                </div>
+            </div>
+            <label class="feedback-data" for="feedback-textarea">Текст письма:</label>
+            <textarea name="text" id="feedback-textarea" placeholder="В свободной форме" required rows="5"></textarea>
+
+            <div class="feedback-block clearfix">
+                <button type="submit" class="btn feedback-btn">Отправить</button>
+                <a class="btn feedback-cancel" href="#">Омена</a>
+            </div>
+            <a href="#" class="feedback-circle-btn"></a>
+        </form>
+    </div>
+    <script
+      src="http://maps.googleapis.com/maps/api/js?v=3&amp;sensor=false">
+    </script>
+    <script src="js/script.min.js"></script>
+</body>
