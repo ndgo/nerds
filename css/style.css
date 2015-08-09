@@ -390,8 +390,8 @@ textarea {
 .slider-controlls-math:checked ~ label[for="slider-controlls-math"]::before,
 .slider-controlls-drugs:checked ~ label[for="slider-controlls-drugs"]::before {
     position: absolute;
-    top: -6px;
-    left: 2px;
+    top: -5px;
+    left: 3px;
     width: 4px;
     height: 4px;
     cursor: pointer;
