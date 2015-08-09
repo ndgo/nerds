@@ -44,7 +44,8 @@ function initialize() {
     var mapOptions = {
         zoom: 17,
         center: new google.maps.LatLng(x, y),
-        scrollwheel: false
+        scrollwheel: false,
+		disableDefaultUI: true
     }
     var map = new  google.maps.Map(
         document.querySelector(".map-script"),
